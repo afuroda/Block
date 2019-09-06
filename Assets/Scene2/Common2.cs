@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class NextButtonMethod : MonoBehaviour {
+
+public class Common2 : MonoBehaviour {
+    public static bool WinResult2 = false;
+
+    public static bool LoseResult2 = false;
     // Start is called before the first frame update
     void Start () {
 
@@ -11,9 +14,5 @@ public class NextButtonMethod : MonoBehaviour {
     // Update is called once per frame
     void Update () {
 
-    }
-    public void OnClick () { // 必ず public にする
-        Debug.Log ("clicked");
-        SceneManager.LoadScene ("Scene2");
     }
 }

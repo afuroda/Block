@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class NextButtonMethod : MonoBehaviour {
+public class NextButtonMethod2 : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
@@ -14,6 +14,6 @@ public class NextButtonMethod : MonoBehaviour {
     }
     public void OnClick () { // 必ず public にする
         Debug.Log ("clicked");
-        SceneManager.LoadScene ("Scene2");
+        SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
     }
 }
