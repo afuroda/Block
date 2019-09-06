@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class selectMethod : MonoBehaviour {
+public class Stage2Method : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
@@ -12,8 +12,7 @@ public class selectMethod : MonoBehaviour {
     void Update () {
 
     }
-
     public void OnClick () { // 必ず public にする
-        SceneManager.LoadScene ("StageSelect");
+        SceneManager.LoadScene ("Scene2");
     }
 }
