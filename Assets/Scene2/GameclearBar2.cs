@@ -17,6 +17,6 @@ public class GameclearBar2 : MonoBehaviour {
         //ボールが触れたらボールを停止させる
         Ball2.Egg2.velocity = Vector3.zero;
 
-        Common2.WinResult2 = true;
+        Common.WinResult = true;
     }
 }

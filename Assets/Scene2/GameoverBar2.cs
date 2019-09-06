@@ -17,6 +17,6 @@ public class GameoverBar2 : MonoBehaviour {
         //ボールが触れたらボールを停止させる
         Ball2.Egg2.velocity = Vector3.zero;
 
-        Common2.LoseResult2 = true;
+        Common.LoseResult = true;
     }
 }

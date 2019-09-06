@@ -7,14 +7,17 @@ public class PrefabBlock2 : MonoBehaviour {
     void Start () {
 
         for (int i = 0; i < 15; i++) {
+            int value = Random.Range (0, 5 + 1);
             if (i <= 4) {
-                int value = Random.Range (1, 10 + 1);
+
                 // CubeプレハブをGameObject型で取得
                 GameObject obj = (GameObject) Resources.Load ("Block");
                 // Cubeプレハブを元に、インスタンスを生成、
                 GameObject target = Instantiate (obj, new Vector3 (-4.0f + (i * 2.0f), 0.0f, 10.0f), Quaternion.identity);
 
-                if (value == 1) {
+                if (value == 0) {
+                    Destroy (target);
+                } else if (value == 1) {
                     target.GetComponent<Renderer> ().material.color = new Color32 (252, 228, 236, 1);
                     target.name = value.ToString ();
                 } else if (value == 2) {
@@ -47,13 +50,15 @@ public class PrefabBlock2 : MonoBehaviour {
                 }
 
             } else if (i >= 5 && i <= 9) {
-                int value = Random.Range (1, 10 + 1);
+
                 // CubeプレハブをGameObject型で取得
                 GameObject obj = (GameObject) Resources.Load ("Block");
                 // Cubeプレハブを元に、インスタンスを生成、
                 GameObject target = Instantiate (obj, new Vector3 (-4.0f + ((i - 5) * 2.0f), 0.0f, 9.0f), Quaternion.identity);
 
-                if (value == 1) {
+                if (value == 0) {
+                    Destroy (target);
+                } else if (value == 1) {
                     target.GetComponent<Renderer> ().material.color = new Color32 (252, 228, 236, 1);
                     target.name = value.ToString ();
                 } else if (value == 2) {
@@ -86,13 +91,15 @@ public class PrefabBlock2 : MonoBehaviour {
                 }
 
             } else if (i >= 10) {
-                int value = Random.Range (1, 10 + 1);
+
                 // CubeプレハブをGameObject型で取得
                 GameObject obj = (GameObject) Resources.Load ("Block");
                 // Cubeプレハブを元に、インスタンスを生成、
                 GameObject target = Instantiate (obj, new Vector3 (-4.0f + ((i - 10) * 2.0f), 0.0f, 8.0f), Quaternion.identity);
 
-                if (value == 1) {
+                if (value == 0) {
+                    Destroy (target);
+                } else if (value == 1) {
                     target.GetComponent<Renderer> ().material.color = new Color32 (252, 228, 236, 1);
                     target.name = value.ToString ();
                 } else if (value == 2) {
