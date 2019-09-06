@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PrefabBottomCube2 : MonoBehaviour {
+public class PrefabBottomCube3 : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
-        int value = Random.Range (7, 10 + 1);
 
         for (int i = 0; i < 5; i++) { // CubeプレハブをGameObject型で取得
+            int value = Random.Range (7, 10 + 1);
             GameObject obj = (GameObject) Resources.Load ("Block");
             // Cubeプレハブを元に、インスタンスを生成、
             GameObject target = Instantiate (obj, new Vector3 (-4.0f + (i * 2.0f), 0.0f, -10.0f), Quaternion.identity);
