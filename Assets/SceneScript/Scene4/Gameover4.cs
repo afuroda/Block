@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Stage1Methods : MonoBehaviour {
+
+public class Gameover4 : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
@@ -13,9 +13,10 @@ public class Stage1Methods : MonoBehaviour {
 
     }
 
-    public void OnClick () {
+    void OnCollisionEnter (Collision collisionInfo) {
+        //ボールが触れたらボールを停止させる
+        Ball.Egg.velocity = Vector3.zero;
 
-        SceneManager.LoadScene ("Scene2");
-
+        Common.LoseResult = true;
     }
 }

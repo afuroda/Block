@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Stage1Methods : MonoBehaviour {
+
+public class GotoFirstView : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
@@ -13,9 +14,7 @@ public class Stage1Methods : MonoBehaviour {
 
     }
 
-    public void OnClick () {
-
-        SceneManager.LoadScene ("Scene2");
-
+    public void OnClick () { // 必ず public にする
+        SceneManager.LoadScene ("FirstSecne");
     }
 }

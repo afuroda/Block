@@ -23,9 +23,11 @@ public class TextMashPro : MonoBehaviour {
             textbox_name.text = "GAME\r\nCLEAR!!";
             Botton.OneMoreBtn.SetActive (true);
             NextBtn.NextBottton.SetActive (true);
+            GotoFirstViewAppear.GoToFirstView.SetActive (true);
         } else if (Common.LoseResult == true) {
             textbox_name.text = "GAME\r\nOVER!!";
             Botton.OneMoreBtn.SetActive (true);
+            GotoFirstViewAppear.GoToFirstView.SetActive (true);
 
         }
     }

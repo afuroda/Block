@@ -1,21 +1,18 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
-public class Stage1Methods : MonoBehaviour {
+
+public class GotoFirstViewAppear : MonoBehaviour {
+
+    public static GameObject GoToFirstView;
     // Start is called before the first frame update
     void Start () {
-
+        GoToFirstView = this.gameObject;
+        GoToFirstView.SetActive (false);
     }
 
     // Update is called once per frame
     void Update () {
-
-    }
-
-    public void OnClick () {
-
-        SceneManager.LoadScene ("Scene2");
 
     }
 }
