@@ -6,6 +6,8 @@ public class PrefabBlock4 : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
 
+        PlayerPrefs.SetInt ("FirstFlag", 4);
+
         for (int i = 0; i < 15; i++) {
             int value = Random.Range (0, 10 + 1);
             if (i <= 4) {

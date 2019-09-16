@@ -15,7 +15,7 @@ public class Gameclear2 : MonoBehaviour {
 
     void OnCollisionEnter (Collision collisionInfo) {
 
-        PlayerPrefs.SetInt ("btn2", 1);
+        PlayerPrefs.SetInt ("btn3", 1);
         PlayerPrefs.Save ();
         //ボールが触れたらボールを停止させる
         Ball.Egg.velocity = Vector3.zero;

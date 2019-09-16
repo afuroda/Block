@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 public class Stage4Methods : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
-        PlayerPrefs.SetInt ("BTN4", 1);
-        PlayerPrefs.Save ();
+
     }
 
     // Update is called once per frame
