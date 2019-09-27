@@ -5,7 +5,7 @@ using UnityEngine;
 public class Gameclear6 : MonoBehaviour {
     // Start is called before the first frame update
     void Start () {
-
+        PlayerPrefs.SetInt ("FirstFlag", 6);
     }
 
     // Update is called once per frame

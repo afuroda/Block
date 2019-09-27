@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Ball2 : MonoBehaviour {
-    private float speed = 2000.0f;
+    private float speed = 1500.0f;
 
     public static Rigidbody Egg;
 
@@ -19,7 +19,7 @@ public class Ball2 : MonoBehaviour {
     }
 
     void OnCollisionEnter (Collision collisionInfo) {
-        this.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity.normalized * 30;
+        this.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity.normalized * 25;
 
         if (this.GetComponent<Rigidbody> ().position.x == 4.5 && collisionInfo.gameObject.CompareTag ("Block")) {
             this.GetComponent<Rigidbody> ().velocity = new Vector3 (-5f, 0f, -5f);

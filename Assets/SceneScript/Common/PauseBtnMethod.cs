@@ -14,13 +14,22 @@ public class PauseBtnMethod : MonoBehaviour {
     public static bool PauseFlag;
 
     public Rigidbody PauseRigidbody;
+    public Rigidbody PauseRigidbodyMini;
+    public Rigidbody PauseRigidbodyMini2;
 
     public Vector3 PauseVelocity;
+    public Vector3 PauseVelocityMini;
+    public Vector3 PauseVelocityMini2;
+
+    public int SplitFlag;
     // Start is called before the first frame update
     void Start () {
 
         PauseFlag = false;
         btnImage = GameObject.Find ("Canvas/PauseBtn").GetComponent<Image> ();
+        SplitFlag = PlayerPrefs.GetInt ("FirstFlag", 9);
+
+        Debug.Log ("SplitFlag:" + SplitFlag);
     }
 
     // Update is called once per frame
@@ -32,16 +41,36 @@ public class PauseBtnMethod : MonoBehaviour {
 
         if (PauseFlag == false) {
 
-            PauseRigidbody = Ball.Egg.GetComponent<Rigidbody> ();
-            PauseVelocity = Ball.Egg.GetComponent<Rigidbody> ().velocity;
+            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10) {
+                PauseRigidbody = Ball.Egg.GetComponent<Rigidbody> ();
+                PauseVelocity = Ball.Egg.GetComponent<Rigidbody> ().velocity;
+                PauseRigidbody.velocity = Vector3.zero;
+            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12) {
+                PauseRigidbodyMini = BallMini.Egg.GetComponent<Rigidbody> ();
+                PauseVelocityMini = BallMini.Egg.GetComponent<Rigidbody> ().velocity;
+                PauseRigidbodyMini.velocity = Vector3.zero;
+            } else if (SplitFlag == 8) {
+                PauseRigidbodyMini = BallMini.Egg.GetComponent<Rigidbody> ();
+                PauseVelocityMini = BallMini.Egg.GetComponent<Rigidbody> ().velocity;
+                PauseRigidbodyMini.velocity = Vector3.zero;
 
-            PauseRigidbody.velocity = Vector3.zero;
+                PauseRigidbodyMini2 = BallMini2.Egg.GetComponent<Rigidbody> ();
+                PauseVelocityMini2 = BallMini2.Egg.GetComponent<Rigidbody> ().velocity;
+                PauseRigidbodyMini2.velocity = Vector3.zero;
+            }
 
             btnImage.sprite = PlaySprite;
             PauseFlag = true;
         } else if (PauseFlag == true) {
 
-            PauseRigidbody.velocity = PauseVelocity;
+            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10) {
+                PauseRigidbody.velocity = PauseVelocity;
+            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12) {
+                PauseRigidbodyMini.velocity = PauseVelocityMini;
+            } else if (SplitFlag == 8) {
+                PauseRigidbodyMini.velocity = PauseVelocityMini;
+                PauseRigidbodyMini2.velocity = PauseVelocityMini2;
+            }
 
             btnImage.sprite = PauseSprite;
             PauseFlag = false;

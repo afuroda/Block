@@ -10,7 +10,6 @@ public class PrefabBlock : MonoBehaviour {
             int value = Random.Range (0, 2 + 1);
             if (i <= 4) {
 
-                Debug.Log ("value:" + value);
                 // CubeプレハブをGameObject型で取得
                 GameObject obj = (GameObject) Resources.Load ("Block");
                 // Cubeプレハブを元に、インスタンスを生成、

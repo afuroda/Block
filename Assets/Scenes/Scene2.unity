@@ -171,7 +171,12 @@ MonoBehaviour:
   PauseSprite: {fileID: 21300000, guid: d97994fc05d31fd449a0b49d2efaa673, type: 3}
   PlaySprite: {fileID: 21300000, guid: 157e83f568eca524aa8432e7996a683b, type: 3}
   PauseRigidbody: {fileID: 0}
+  PauseRigidbodyMini: {fileID: 0}
+  PauseRigidbodyMini2: {fileID: 0}
   PauseVelocity: {x: 0, y: 0, z: 0}
+  PauseVelocityMini: {x: 0, y: 0, z: 0}
+  PauseVelocityMini2: {x: 0, y: 0, z: 0}
+  SplitFlag: 0
 --- !u!1 &76841117
 GameObject:
   m_ObjectHideFlags: 0
@@ -708,7 +713,7 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &248633519
 MonoBehaviour:
@@ -719,7 +724,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 248633514}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce0049d38d8f4aacab8af80df01ce39, type: 3}
+  m_Script: {fileID: 11500000, guid: e74412caf8f5945ef918c1b9cf7ff460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &534669902
@@ -1504,7 +1509,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071085246}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce0049d38d8f4aacab8af80df01ce39, type: 3}
+  m_Script: {fileID: 11500000, guid: e74412caf8f5945ef918c1b9cf7ff460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1071085248
@@ -1578,7 +1583,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1075594134
 GameObject:
@@ -1671,7 +1676,7 @@ Transform:
   m_LocalScale: {x: 30, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1075594139
 MonoBehaviour:
@@ -1682,7 +1687,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1075594134}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1ad8e641e254b2ba2844218e48a857, type: 3}
+  m_Script: {fileID: 11500000, guid: 04a7e6b4ebde14b559932eb8aee553f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1180010206
@@ -1714,7 +1719,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1180010206}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1ad8e641e254b2ba2844218e48a857, type: 3}
+  m_Script: {fileID: 11500000, guid: 04a7e6b4ebde14b559932eb8aee553f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1180010208
@@ -1788,7 +1793,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1318809826
 GameObject:
@@ -2147,7 +2152,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1622786153
 GameObject:
@@ -2488,7 +2493,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1843399218}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f1ad8e641e254b2ba2844218e48a857, type: 3}
+  m_Script: {fileID: 11500000, guid: 04a7e6b4ebde14b559932eb8aee553f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1843399220
@@ -2562,7 +2567,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1874100140
 GameObject:
@@ -2593,7 +2598,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1874100140}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ce0049d38d8f4aacab8af80df01ce39, type: 3}
+  m_Script: {fileID: 11500000, guid: e74412caf8f5945ef918c1b9cf7ff460, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!65 &1874100142
@@ -2667,7 +2672,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1901965403
 GameObject:
