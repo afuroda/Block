@@ -27,9 +27,8 @@ public class PauseBtnMethod : MonoBehaviour {
 
         PauseFlag = false;
         btnImage = GameObject.Find ("Canvas/PauseBtn").GetComponent<Image> ();
-        SplitFlag = PlayerPrefs.GetInt ("FirstFlag", 9);
+        SplitFlag = PlayerPrefs.GetInt ("FirstFlag", 0);
 
-        Debug.Log ("SplitFlag:" + SplitFlag);
     }
 
     // Update is called once per frame
@@ -41,11 +40,11 @@ public class PauseBtnMethod : MonoBehaviour {
 
         if (PauseFlag == false) {
 
-            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10) {
+            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10 || SplitFlag == 13 || SplitFlag == 15) {
                 PauseRigidbody = Ball.Egg.GetComponent<Rigidbody> ();
                 PauseVelocity = Ball.Egg.GetComponent<Rigidbody> ().velocity;
                 PauseRigidbody.velocity = Vector3.zero;
-            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12) {
+            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12 || SplitFlag == 14 || SplitFlag == 16) {
                 PauseRigidbodyMini = BallMini.Egg.GetComponent<Rigidbody> ();
                 PauseVelocityMini = BallMini.Egg.GetComponent<Rigidbody> ().velocity;
                 PauseRigidbodyMini.velocity = Vector3.zero;
@@ -63,9 +62,9 @@ public class PauseBtnMethod : MonoBehaviour {
             PauseFlag = true;
         } else if (PauseFlag == true) {
 
-            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10) {
+            if (0 <= SplitFlag && SplitFlag <= 6 || SplitFlag == 10 || SplitFlag == 13 || SplitFlag == 15) {
                 PauseRigidbody.velocity = PauseVelocity;
-            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12) {
+            } else if (SplitFlag == 7 || SplitFlag == 9 || 11 == SplitFlag || SplitFlag == 12 || SplitFlag == 14 || SplitFlag == 16) {
                 PauseRigidbodyMini.velocity = PauseVelocityMini;
             } else if (SplitFlag == 8) {
                 PauseRigidbodyMini.velocity = PauseVelocityMini;

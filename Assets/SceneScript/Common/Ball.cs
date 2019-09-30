@@ -7,6 +7,9 @@ public class Ball : MonoBehaviour {
 
     public static Rigidbody Egg;
 
+    public AudioClip sound1;
+    AudioSource audioSource;
+
     public float moveForceMultiplier;
     // Start is called before the first frame update
     void Start () {
@@ -15,10 +18,15 @@ public class Ball : MonoBehaviour {
         this.GetComponent<Rigidbody> ().AddForce (
             (transform.forward + transform.right) * speed);
 
+        audioSource = GetComponent<AudioSource> ();
         Egg = this.GetComponent<Rigidbody> ();
+
     }
 
     void OnCollisionEnter (Collision collisionInfo) {
+
+        audioSource.PlayOneShot (sound1);
+
         this.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity.normalized * 25;
 
         if (this.GetComponent<Rigidbody> ().position.x == 4.5 && collisionInfo.gameObject.CompareTag ("Block")) {

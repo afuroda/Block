@@ -10,6 +10,8 @@ public class BallMini2 : MonoBehaviour {
     public float moveForceMultiplier;
 
     private Vector3 firstVelocity;
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start () {
 
@@ -18,11 +20,12 @@ public class BallMini2 : MonoBehaviour {
         firstVelocity = new Vector3 (value, 0, value);
 
         this.GetComponent<Rigidbody> ().AddForce (firstVelocity * speed);
-
+        audioSource = GetComponent<AudioSource> ();
         Egg = this.GetComponent<Rigidbody> ();
     }
 
     void OnCollisionEnter (Collision collisionInfo) {
+        audioSource.PlayOneShot (sound1);
         this.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity.normalized * 25;
 
         if (this.GetComponent<Rigidbody> ().position.x >= 4.6 && collisionInfo.gameObject.CompareTag ("Block1")) {

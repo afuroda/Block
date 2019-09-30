@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Gameover1 : MonoBehaviour {
+
+    public AudioClip soundOver;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start () {
-
+        audioSource = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -16,7 +19,7 @@ public class Gameover1 : MonoBehaviour {
     void OnCollisionEnter (Collision collisionInfo) {
         //ボールが触れたらボールを停止させる
         Ball.Egg.velocity = Vector3.zero;
-
+        audioSource.PlayOneShot (soundOver);
         Common.LoseResult = true;
     }
 }

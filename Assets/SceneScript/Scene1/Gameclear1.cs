@@ -3,9 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Gameclear1 : MonoBehaviour {
+
+    public AudioClip soundClear;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start () {
         PlayerPrefs.SetInt ("FirstFlag", 1);
+        audioSource = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -19,7 +23,7 @@ public class Gameclear1 : MonoBehaviour {
         PlayerPrefs.Save ();
         //ボールが触れたらボールを停止させる
         Ball.Egg.velocity = Vector3.zero;
-
+        audioSource.PlayOneShot (soundClear);
         Common.WinResult = true;
     }
 }

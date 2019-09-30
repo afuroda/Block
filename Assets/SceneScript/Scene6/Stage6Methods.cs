@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using GoogleMobileAds.Api;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Stage6Methods : MonoBehaviour {
@@ -14,6 +16,8 @@ public class Stage6Methods : MonoBehaviour {
 
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize (appId);
+
+        RequestInterstitial ();
     }
 
     public void RequestInterstitial ()　　 {　　　　　　　　　　
@@ -33,13 +37,6 @@ public class Stage6Methods : MonoBehaviour {
         　　　　
         this._interstitial.LoadAd (request);
     }　　
-
-    public void Update () {
-        if (shown == false) {
-            ShowInterstitial ();
-            Debug.Log ("Not yet...");
-        }
-    }
 
     public void ShowInterstitial () {
         if (_interstitial.IsLoaded ()) {
@@ -61,7 +58,7 @@ public class Stage6Methods : MonoBehaviour {
         int value = UnityEngine.Random.Range (0, 2 + 1);
         if (value == 0) {
 
-            RequestInterstitial ();
+            ShowInterstitial ();
         } else if (value == 1) {
 
             SceneManager.LoadScene ("Scene7");

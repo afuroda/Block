@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 public class NextBtnMethod : MonoBehaviour {
+
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start () {
-
+        audioSource = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -14,6 +17,7 @@ public class NextBtnMethod : MonoBehaviour {
     }
 
     public void OnClick () { // 必ず public にする
+        audioSource.PlayOneShot (sound1);
         SceneManager.LoadScene ("StageSelect1");
     }
 }

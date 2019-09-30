@@ -5,9 +5,11 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class Stage1Method : MonoBehaviour {
 
+    public AudioClip sound1;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start () {
-
+        audioSource = GetComponent<AudioSource> ();
     }
 
     // Update is called once per frame
@@ -16,7 +18,7 @@ public class Stage1Method : MonoBehaviour {
     }
 
     public void OnClick () { // 必ず public にする
-
+        audioSource.PlayOneShot (sound1);
         SceneManager.LoadScene ("Scene1");
 
     }
