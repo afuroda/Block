@@ -25,11 +25,11 @@ public class BallMini : MonoBehaviour {
         audioSource.PlayOneShot (sound1);
         this.GetComponent<Rigidbody> ().velocity = this.GetComponent<Rigidbody> ().velocity.normalized * 25;
 
-        if (this.GetComponent<Rigidbody> ().position.x >= 4.7 && collisionInfo.gameObject.CompareTag ("Block1")) {
+        if (this.GetComponent<Rigidbody> ().position.x >= 4.7 && collisionInfo.gameObject.CompareTag ("Block")) {
             this.GetComponent<Rigidbody> ().velocity = new Vector3 (-5f, 0f, -5f);
             Debug.Log ("Ball:" + this.GetComponent<Rigidbody> ().position.x);
         }
-        if (this.GetComponent<Rigidbody> ().position.x <= -4.7 && collisionInfo.gameObject.CompareTag ("Block1")) {
+        if (this.GetComponent<Rigidbody> ().position.x <= -4.7 && collisionInfo.gameObject.CompareTag ("Block")) {
             this.GetComponent<Rigidbody> ().velocity = new Vector3 (5f, 0f, 5f);
             Debug.Log ("Ball:" + this.GetComponent<Rigidbody> ().position.x);
         }

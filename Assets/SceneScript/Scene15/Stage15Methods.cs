@@ -49,7 +49,7 @@ public class Stage15Methods : MonoBehaviour {
 
     public void HandleOnAdClosed (object sender, EventArgs args) {
         _interstitial.Destroy ();
-        SceneManager.LoadScene ("Scene14");
+        SceneManager.LoadScene ("Scene16");
     }
 
     // Update is called once per frame
@@ -60,7 +60,7 @@ public class Stage15Methods : MonoBehaviour {
             ShowInterstitial ();
         } else if (value == 1) {
 
-            SceneManager.LoadScene ("Scene14");
+            SceneManager.LoadScene ("Scene16");
         }
     }
 }

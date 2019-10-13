@@ -9,6 +9,7 @@ TagManager:
   - GameClearBar
   - Block1
   - Block
+  - UnMove
   layers:
   - Default
   - TransparentFX

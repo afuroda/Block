@@ -36,9 +36,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene9.unity
     guid: 1cf8551342900464cb92cfa18e5e499a
   - enabled: 1
-    path: Assets/Scenes/Scene10.unity
-    guid: 3ac5fc75995f24d858d31b6d882a90cb
-  - enabled: 1
     path: Assets/Scenes/Scene11.unity
     guid: 0b4ba80fafa9543f38f88d1186fc4c89
   - enabled: 1
@@ -54,9 +51,51 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene15.unity
     guid: 6d6d2fbfe9502411c98e16ddd0f7be92
   - enabled: 1
+    path: Assets/Scenes/Scene16.unity
+    guid: 5873b7d17d6bd4a2ab8c8cceac92b0e9
+  - enabled: 1
+    path: Assets/Scenes/Scene17.unity
+    guid: 4149d14d7a2404f468f73665e186982a
+  - enabled: 1
+    path: Assets/Scenes/Scene18.unity
+    guid: 1d54ed1282d5e431e8adea12d2966f46
+  - enabled: 1
+    path: Assets/Scenes/Scene19.unity
+    guid: 14c3603d5ac4d489da22f5c89a561c49
+  - enabled: 1
+    path: Assets/Scenes/Scene20.unity
+    guid: f4ff8c7881c6e47b6a8f15b2a33b1b16
+  - enabled: 1
+    path: Assets/Scenes/Scene21.unity
+    guid: 3ac5fc75995f24d858d31b6d882a90cb
+  - enabled: 1
+    path: Assets/Scenes/Scene22.unity
+    guid: 9edf011186b2e4d34b4fd2fa7cc31086
+  - enabled: 1
+    path: Assets/Scenes/Scene23.unity
+    guid: 5f5f88985e34f401ea80a9c532cb6608
+  - enabled: 1
+    path: Assets/Scenes/Scene24.unity
+    guid: 8a967ad4fbf1a46808365d4c6cc4cad7
+  - enabled: 1
+    path: Assets/Scenes/Scene25.unity
+    guid: 01668159507dc4122a4d47e4421c82b3
+  - enabled: 1
+    path: Assets/Scenes/Scene26.unity
+    guid: 78dce115765bf481b8e10fbe7e5c6487
+  - enabled: 1
+    path: Assets/Scenes/Scene27.unity
+    guid: c35e7d4acce054bf0b827c73438c4dec
+  - enabled: 1
+    path: Assets/Scenes/Scene28.unity
+    guid: 9af1d0f8d33d44b97992adb24064cfc3
+  - enabled: 1
     path: Assets/Scenes/StageSelect.unity
     guid: 3ff81fd04ed174e0eb1236d717a2fb46
   - enabled: 1
     path: Assets/Scenes/StageSelect1.unity
     guid: 3e7cbd8bc6d474d7594eb8ddae7c3cb7
+  - enabled: 1
+    path: Assets/Scenes/StageSelect2.unity
+    guid: a3c6bcc6b31034c95b894c9358915b2d
   m_configObjects: {}
