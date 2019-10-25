@@ -25,7 +25,7 @@ public class AdVideo : MonoBehaviour {　　
 
     　　
     public void RequestInterstitial ()　　 {　　　　　　　　　　
-        string adUnitId = "ca-app-pub-3940256099942544/4411468910";　　
+        string adUnitId = "ca-app-pub-5719821723126134/9125547377";　　
 
         　　　　 // Initialize an InterstitialAd.
         　　　　

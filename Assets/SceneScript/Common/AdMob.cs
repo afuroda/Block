@@ -19,7 +19,7 @@ public class AdMob : MonoBehaviour {
 
     private void RequestBanner () {
         // 本番では　自身の広告ユニットIDを設定します
-        string adUnitId = "ca-app-pub-3940256099942544/2934735716";
+        string adUnitId = "ca-app-pub-5719821723126134/7361911703";
 
         // Create a 320x50 banner at the top of the screen.
         BannerView bannerView = new BannerView (adUnitId, AdSize.Banner, AdPosition.Bottom);

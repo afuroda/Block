@@ -48,6 +48,34 @@ public class start : MonoBehaviour {
             SceneManager.LoadScene ("Scene13");
         } else if (FirstFlag == 14) {
             SceneManager.LoadScene ("Scene14");
+        } else if (FirstFlag == 15) {
+            SceneManager.LoadScene ("Scene15");
+        } else if (FirstFlag == 16) {
+            SceneManager.LoadScene ("Scene16");
+        } else if (FirstFlag == 17) {
+            SceneManager.LoadScene ("Scene17");
+        } else if (FirstFlag == 18) {
+            SceneManager.LoadScene ("Scene18");
+        } else if (FirstFlag == 19) {
+            SceneManager.LoadScene ("Scene19");
+        } else if (FirstFlag == 20) {
+            SceneManager.LoadScene ("Scene20");
+        } else if (FirstFlag == 21) {
+            SceneManager.LoadScene ("Scene21");
+        } else if (FirstFlag == 22) {
+            SceneManager.LoadScene ("Scene22");
+        } else if (FirstFlag == 23) {
+            SceneManager.LoadScene ("Scene23");
+        } else if (FirstFlag == 24) {
+            SceneManager.LoadScene ("Scene24");
+        } else if (FirstFlag == 25) {
+            SceneManager.LoadScene ("Scene25");
+        } else if (FirstFlag == 26) {
+            SceneManager.LoadScene ("Scene26");
+        } else if (FirstFlag == 27) {
+            SceneManager.LoadScene ("Scene27");
+        } else if (FirstFlag == 28) {
+            SceneManager.LoadScene ("Scene28");
         }
     }
 }
