@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>695534560244-p5tungudr7qmne4d8628qosju186cgf2.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.695534560244-p5tungudr7qmne4d8628qosju186cgf2</string>
+	<key>API_KEY</key>
+	<string>AIzaSyB49ELr0IanzFrO8P1kZ3Gev6kaXC79IGY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>695534560244</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.afuroda.BlockforUnityApp</string>
+	<key>PROJECT_ID</key>
+	<string>blockforunity</string>
+	<key>STORAGE_BUCKET</key>
+	<string>blockforunity.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:695534560244:ios:b8def994da5babab384fa1</string>
+	<key>DATABASE_URL</key>
+	<string>https://blockforunity.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-5719821723126134~6154154702</string>
+</dict>
+</plist>

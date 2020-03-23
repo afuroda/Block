@@ -1,0 +1,37 @@
+{
+  "client": [
+    {
+      "services": {
+        "appinvite_service": {
+          "status": 1
+        }, 
+        "analytics_service": {
+          "status": 0
+        }
+      }, 
+      "oauth_client": [
+        {
+          "client_id": "695534560244-p5tungudr7qmne4d8628qosju186cgf2.apps.googleusercontent.com"
+        }
+      ], 
+      "api_key": [
+        {
+          "current_key": "AIzaSyB49ELr0IanzFrO8P1kZ3Gev6kaXC79IGY"
+        }
+      ], 
+      "client_info": {
+        "mobilesdk_app_id": "1:695534560244:ios:b8def994da5babab384fa1", 
+        "android_client_info": {
+          "package_name": "com.afuroda.BlockforUnityApp"
+        }
+      }
+    }
+  ], 
+  "configuration_version": "1", 
+  "project_info": {
+    "storage_bucket": "blockforunity.appspot.com", 
+    "project_id": "blockforunity", 
+    "firebase_url": "https://blockforunity.firebaseio.com", 
+    "project_number": "695534560244"
+  }
+}
